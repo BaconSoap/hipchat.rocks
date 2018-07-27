@@ -1,0 +1,48 @@
+<html>
+<head><title>J/K</title></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
+<script type="text/javascript">
+
+var suffixes = [
+  'it\'s so bad',
+  'i just want to talk to my team',
+  'message not sent - retry',
+  'cats with letters'
+];
+
+var visible = false;
+function toggleVisible() {
+  var tag = document.getElementsByTagName('h1')[0];
+  if (tag.style.color !== 'white')
+    tag.style.color = 'white';
+  else
+    tag.style.color = 'black';
+}
+
+setInterval(toggleVisible, 750);
+
+document.title = 'J/K - ' + suffixes[Math.floor(Math.random() * suffixes.length)];
+
+</script>
+<body>
+<div class="row column text-center">
+  <h1>JUST KIDDING</h1>
+</div>
+<div class="row medium-8 columns">
+<p>
+Did you mean:
+</p>
+<ul>
+<li><a href="https://slack.com/">Slack?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC?</a></li>
+<li><a href="https://discordapp.com/">Discord?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electrical_telegraph">Telegraph?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Smoke_signal">Smoke signals?</a></li>
+<li><a href="https://www.youtube.com/watch?v=i6LGJ7evrAg">The beacons of Gondor?</a></li>
+<li><a href="http://somebodyapp.com/">Somebody?<a></li>
+<li><a href="https://support.spotify.com/us/using_spotify/share_music/messages/">Spotify messages?</a></li>
+<li><a href="https://www.aim.com">Literally anything else?</a></li>
+</ul>
+Made during hipchat downtime with anger by <a href="https://github.com/BaconSoap">Andrew</a>
+</div>
+</body>
